@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import sys
-import typing
 
-def reader(name_file:str) -> None:
+
+def reader(name_file: str) -> None:
     print(f"Accessing file '{name_file}'")
     file = open(name_file, "r")
     content = file.read()
@@ -10,7 +10,7 @@ def reader(name_file:str) -> None:
     print(content)
     print("\n---")
     print("File 'ancient_fragment.txt' closed.")
-    file.close
+    file.close()
 
 
 def main():

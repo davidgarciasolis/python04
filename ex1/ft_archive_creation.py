@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import sys
-import typing
 
-def reader(name_file:str) -> str:
+
+def reader(name_file: str) -> str:
     print(f"Accessing file '{name_file}'")
     file = open(name_file, "r")
     content = file.read()
@@ -14,7 +14,7 @@ def reader(name_file:str) -> str:
     return (content)
 
 
-def writed(content:str, data_request:str) -> None:
+def writed(content: str, data_request: str) -> None:
     result = content.replace("\n", "#\n") + "#"
     try:
         file = open(data_request, "w")
@@ -22,6 +22,7 @@ def writed(content:str, data_request:str) -> None:
         file.close()
     except FileNotFoundError:
         print("Not saving data.")
+
 
 def main():
     if len(sys.argv) == 2:
