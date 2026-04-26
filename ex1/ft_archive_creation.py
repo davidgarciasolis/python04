@@ -24,7 +24,7 @@ def writed(content: str, data_request: str) -> None:
         print("Not saving data.")
 
 
-def main():
+def main() -> None:
     if len(sys.argv) == 2:
         try:
             content = reader(sys.argv[1])

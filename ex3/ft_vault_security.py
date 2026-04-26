@@ -15,7 +15,7 @@ def secure_archive(
         return (False, str(e))
 
 
-def main():
+def main() -> None:
     options = ["r", "w"]
     data = ""
     for option in options:

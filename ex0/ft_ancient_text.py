@@ -13,7 +13,7 @@ def reader(name_file: str) -> None:
     file.close()
 
 
-def main():
+def main() -> None:
     if len(sys.argv) == 2:
         try:
             reader(sys.argv[1])
