@@ -16,6 +16,7 @@ def secure_archive(
 
 
 def main() -> None:
+    print("=== Cyber Archives Security ===")
     options = ["r", "w"]
     data = ""
     for option in options:
@@ -24,6 +25,7 @@ def main() -> None:
                 "Using'secure_archive' to read from a nonexistent file: ")
             result = secure_archive(file_name, option, data)
             print(result)
+            print()
             if (result[0]):
                 data = result[1]
                 break
